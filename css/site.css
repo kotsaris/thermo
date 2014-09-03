@@ -1,0 +1,963 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 100.01%;
+}
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+
+a img {
+  border: none;
+}
+
+
+body.bp {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 75%;
+}
+
+body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
+  font-weight: normal;
+  color: #222222;
+}
+
+body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {
+  margin: 0;
+}
+
+body.bp h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+
+body.bp h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+body.bp h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+
+body.bp h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+body.bp h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+
+body.bp h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body.bp p {
+  margin: 0 0 1.5em;
+}
+
+body.bp p img.left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+
+body.bp p img.right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+
+body.bp a {
+  text-decoration: underline;
+  color: #000099;
+}
+
+body.bp a:visited {
+  color: #000066;
+}
+body.bp a:focus {
+  color: black;
+}
+body.bp a:hover {
+  color: black;
+}
+body.bp a:active {
+  color: #cc0099;
+}
+body.bp blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+body.bp strong {
+  font-weight: bold;
+}
+body.bp em {
+  font-style: italic;
+}
+body.bp dfn {
+  font-style: italic;
+  font-weight: bold;
+}
+body.bp sup, body.bp sub {
+  line-height: 0;
+}
+body.bp abbr, body.bp acronym {
+  border-bottom: 1px dotted #666666;
+}
+body.bp address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+body.bp del {
+  color: #666666;
+}
+body.bp pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+body.bp pre, body.bp code, body.bp tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+body.bp li ul, body.bp li ol {
+  margin: 0;
+}
+body.bp ul, body.bp ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+body.bp ul {
+  list-style-type: disc;
+}
+body.bp ol {
+  list-style-type: decimal;
+}
+body.bp dl {
+  margin: 0 0 1.5em 0;
+}
+body.bp dl dt {
+  font-weight: bold;
+}
+body.bp dd {
+  margin-left: 1.5em;
+}
+body.bp table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+body.bp th {
+  font-weight: bold;
+}
+body.bp thead th {
+  background: #c3d9ff;
+}
+body.bp th, body.bp td, body.bp caption {
+  padding: 4px 10px 4px 5px;
+}
+body.bp tr.even td {
+  background: #e5ecf9;
+}
+body.bp tfoot {
+  font-style: italic;
+}
+body.bp caption {
+  background: #eeeeee;
+}
+body.bp .quiet {
+  color: #666666;
+}
+body.bp .loud {
+  color: #111111;
+}
+body.bp .clear {
+  clear: both;
+}
+body.bp .nowrap {
+  white-space: nowrap;
+}
+body.bp .clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+body.bp .small {
+  font-size: 0.8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+body.bp .large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+body.bp .first {
+  margin-left: 0;
+  padding-left: 0;
+}
+body.bp .last {
+  margin-right: 0;
+  padding-right: 0;
+}
+body.bp .top {
+  margin-top: 0;
+  padding-top: 0;
+}
+body.bp .bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+body.bp .showgrid {
+  background: url('/images/grid.png?1295290845');
+}
+body.bp .error {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fbe3e4;
+  color: #8a1f11;
+  border-color: #fbc2c4;
+}
+body.bp .error a {
+  color: #8a1f11;
+}
+body.bp .notice {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fff6bf;
+  color: #514721;
+  border-color: #ffd324;
+}
+body.bp .notice a {
+  color: #514721;
+}
+body.bp .success {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+}
+body.bp .success a {
+  color: #264409;
+}
+body.bp .hide {
+  display: none;
+}
+body.bp .highlight {
+  background: yellow;
+}
+body.bp .added {
+  background: #006600;
+  color: white;
+}
+body.bp .removed {
+  background: #990000;
+  color: white;
+}
+
+body.bp .box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5ecf9;
+}
+body.bp div.border {
+  padding-right: 0px;
+  margin-right: 1px;
+  border-right: 1px solid #eeeeee;
+}
+body.bp div.colborder {
+  padding-right: 19px;
+  margin-right: 20px;
+  border-right: 1px solid #eeeeee;
+}
+body.bp hr {
+  background: #dddddd;
+  color: #dddddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
+  border: none;
+}
+body.bp hr.space {
+  background: #dddddd;
+  color: #dddddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
+  border: none;
+  background: white;
+  color: white;
+  visibility: hidden;
+}
+body.bp form.inline {
+  line-height: 3;
+}
+body.bp form.inline p {
+  margin-bottom: 0;
+}
+
+form.bp label {
+  font-weight: bold;
+}
+form.bp fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+form.bp legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+form.bp input.title {
+  font-size: 1.5em;
+}
+form.bp input[type=checkbox], form.bp input.checkbox, form.bp input[type=radio], form.bp input.radio {
+  position: relative;
+  top: 0.25em;
+}
+form.bp textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+form.bp select {
+  margin: 0.5em 0;
+}
+form.bp fieldset {
+  border: 1px solid #cccccc;
+}
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password],
+form.bp textarea, form.bp select {
+  border: 1px solid #bbbbbb;
+}
+form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus,
+form.bp textarea:focus, form.bp select:focus {
+  border: 1px solid #666666;
+}
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
+  width: 300px;
+}
+form.bp textarea {
+  width: 390px;
+  height: 250px;
+}
+
+body.two-col #container {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  overflow: visible;
+}
+body.two-col #header, body.two-col #footer, body.two-col #header-pic, body.two-col #full-content {
+  display: inline;
+  float: left;
+  margin-right: 2px;
+  width: 900px;
+}
+* html body.two-col #header, * html body.two-col #footer, * html body.two-col #header-pic, * html body.two-col #full-content {
+  overflow-x: hidden;
+}
+body.two-col #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 2px;
+  width: 298.667px;
+}
+* html body.two-col #sidebar {
+  overflow-x: hidden;
+}
+body.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 599.333px;
+}
+
+* html body.two-col #content {
+  overflow-x: hidden;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+@charset "UTF-8";
+body.two-col {
+  font: 13px Verdana, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #444444;
+}
+
+.index {
+  padding-top: 50px;
+  text-align: center;
+  font: 16px Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.index img {
+  padding-bottom: 20px;
+}
+
+#header {
+  margin: 0 0 5px 0;
+  height: 130px;
+  background-color: #232323;
+}
+#header #logoSloganContainer {
+  clear: both;
+  float: left;
+  background-color: #a0a0a0;
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -o-border-top-right-radius: 15px;
+  -ms-border-top-right-radius: 15px;
+  -khtml-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  -ms-border-bottom-right-radius: 15px;
+  -khtml-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 34px;
+}
+#header #logoSloganContainer #logoSlogan {
+  font: 13px Verdana, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding: 10px 40px 0px 10px;
+  line-height: normal;
+  font-weight: normal;
+  color: White;
+}
+#header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#header #logoLink {
+  float: left;
+  font-size: 2.4em;
+  margin-right: 15px;
+}
+#header #logoLink h1 {
+  padding: 20px 0px 0px 10px;
+  color: #ffff00;
+}
+
+.inputForm label {
+  width: 10em;
+  position: absolute;
+}
+.inputForm input[type="text"] {
+  width: 13em;
+  margin-left: 11em;
+}
+.inputForm select {
+  width: 13em;
+  margin-left: 11em;
+}
+.inputForm input[type="file"] {
+  width: 13em;
+  margin-left: 11em;
+}
+
+.clearer {
+  clear: both;
+  width: 1px;
+}
+
+.notice {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+}
+.notice a {
+  color: #264409;
+}
+
+.error {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fbe3e4;
+  color: #8a1f11;
+  border-color: #fbc2c4;
+}
+
+.error a {
+  color: #8a1f11;
+}
+
+#full-content {
+  min-height: 600px;
+}
+
+#full-content a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3B5998;
+}
+
+#full-content a:visited {
+  color: #735005;
+}
+
+#full-content a:hover {
+  text-decoration: underline;
+}
+
+#full-content .writeup {
+  padding-bottom: 10px;
+}
+
+#full-content .writeup .left-image {
+  height: 350px;
+  float: right;
+  margin: 10px;
+}
+
+#full-content .writeup .center-image {
+  height: 150px;
+  padding-left: 150px;
+}
+
+#full-content .writeup h1 {
+  font-size: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
+  width: 600px;
+  background-color: #C3D9FF;
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -o-border-top-right-radius: 15px;
+  -ms-border-top-right-radius: 15px;
+  -khtml-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  -ms-border-bottom-right-radius: 15px;
+  -khtml-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#full-content .writeup p {
+  padding: 5px;
+  text-indent: 10px;
+  text-align: justify;
+  font: 16px Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#full-content .writeup ul {
+  font: 16px Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 10px 0px 0px 20px;
+}
+
+#full-content .writeup ul li {
+  padding: 0 0 5px 0;
+}
+
+.pagination {
+  background-color: #232323;
+  color: white;
+  width: 100%;
+  text-align: center;
+  -moz-border-radius: 5px 5px;
+  -webkit-border-radius: 5px 5px;
+  -o-border-radius: 5px 5px;
+  -ms-border-radius: 5px 5px;
+  -khtml-border-radius: 5px 5px;
+  border-radius: 5px 5px;
+}
+
+.pagination a:link {
+    color: white;
+}
+
+.pagination a:visited {
+    color: white;
+}
+
+span.current {
+  color: gold;
+}
+
+.product-index {
+  font: 16px Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  width: 170px;
+  height: 190px;
+  float: left;
+  overflow: hidden;
+}
+
+.product-index img {
+  padding-left: 45px;
+}
+
+.product-index .product-info a {
+  text-decoration: none;
+}
+
+.product-index .model {
+  text-align: center;
+}
+
+.productShow {
+  font: 16px Verdana, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.productShow h1 {
+  border-bottom: black solid 1px;
+  font-size: 1.3em;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.productShow .productImg {
+  max-width: 300px;
+  float: left;
+}
+
+.productShow small {
+  color: #a41919;
+  padding-left: 5px;
+}
+
+.productShow .descr {
+  padding-top: 10px;
+}
+
+.productShow .productInfo {
+  padding: 0 0 0 10px;
+  width: 585px;
+  float: right;
+}
+
+.emailForm {
+  width: 500px;
+  /*  textarea {
+      max-width: 50%;
+      max-height: 200px;
+      width: 100%;
+    }
+    input[type='text'] {
+      width: 50%;
+      margin: 0 0 15px 0;
+    }*/
+}
+
+.emailForm label {
+  font-weight: bold;
+}
+
+.emailForm fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+
+.emailForm legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.emailForm input.text, .emailForm input.title, .emailForm input[type=email], .emailForm input[type=text], .emailForm input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+
+.emailForm input.title {
+  font-size: 1.5em;
+}
+
+.emailForm input[type=checkbox], .emailForm input.checkbox, .emailForm input[type=radio], .emailForm input.radio {
+  position: relative;
+  top: 0.25em;
+}
+
+.emailForm textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+
+.emailForm select {
+  margin: 0.5em 0;
+}
+
+.emailForm fieldset {
+  border: 1px solid #cccccc;
+}
+
+.emailForm input.text, .emailForm input.title, .emailForm input[type=email], .emailForm input[type=text], .emailForm input[type=password],
+.emailForm textarea, .emailForm select {
+  border: 1px solid #bbbbbb;
+}
+
+.emailForm input.text:focus, .emailForm input.title:focus, .emailForm input[type=email]:focus, .emailForm input[type=text]:focus, .emailForm input[type=password]:focus,
+.emailForm textarea:focus, .emailForm select:focus {
+  border: 1px solid #666666;
+}
+
+.emailForm input.text, .emailForm input.title, .emailForm input[type=email], .emailForm input[type=text], .emailForm input[type=password] {
+  width: 300px;
+}
+
+.emailForm textarea {
+  width: 390px;
+  height: 250px;
+}
+.emailForm p {
+  padding: 0px 0px 0px 0px;
+}
+
+.emailForm label {
+  padding: 0;
+}
+
+ul.topnav {
+  list-style: none;
+  padding: 0px 0 10px 0px;
+  margin: 0;
+  float: left;
+  width: 100%;
+  background: #222;
+  font-size: 1.2em;
+  background: url(/images/topnav_bg.gif) repeat-x;
+}
+
+ul.topnav li {
+  float: left;
+  margin: 0;
+  padding: 0 15px 0 10px;
+  position: relative;
+  /*--Declare X and Y axis base for sub navigation--*/
+}
+
+ul.topnav li a {
+  padding: 10px 5px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  float: left;
+}
+
+ul.topnav li a:hover {
+  background: url(/images/topnav_hover.gif) no-repeat center top;
+}
+
+ul.topnav li span {
+  /*--Drop down trigger styles--*/
+  width: 17px;
+  height: 35px;
+  float: left;
+  background: url(/images/subnav_btn.gif) no-repeat center top;
+}
+
+ul.topnav li span.subhover {
+  background-position: center bottom;
+  cursor: pointer;
+}
+
+/*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+  list-style: none;
+  position: absolute;
+  /*--Important - Keeps subnav from affecting main navigation flow--*/
+  left: 0;
+  top: 35px;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  display: none;
+  float: left;
+  width: 250px;
+  border: 1px solid #111;
+}
+
+ul.topnav li ul.subnav li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #252525;
+  /*--Create bevel effect--*/
+  border-bottom: 1px solid #444;
+  /*--Create bevel effect--*/
+  clear: both;
+  width: 250px;
+}
+
+html ul.topnav li ul.subnav li a {
+  float: left;
+  width: 225px;
+  background: #333333 url(/images/dropdown_linkbg.gif) no-repeat 10px center;
+  padding-left: 20px;
+}
+
+html ul.topnav li ul.subnav li a:hover {
+  /*--Hover effect for subnav links--*/
+  background: #222222 url(/images/dropdown_linkbg.gif) no-repeat 10px center;
+}
+
+.contact-link {
+    background-image: url(/images/mail.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.qa-link {
+    background-image: url(/images/question.gif);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+#qa-index {
+    margin-left: 20px;
+}
+
+#product-list {
+    min-height: 735px;
+}
+
+div.fb-like {
+    padding-top: 10px;
+}
+
+.edit-link {
+    float: left;
+    margin-right: 25px;
+}

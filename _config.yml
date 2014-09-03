@@ -1,0 +1,5 @@
+name: Thermooikonomiki website
+markdown: redcarpet
+pygments: true
+permalink: pretty
+encoding: utf-8
